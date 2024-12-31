@@ -204,3 +204,4 @@ bool matrix_scan_custom(matrix_row_t current_matrix[]) {
     if (changed) memcpy(current_matrix, curr_matrix, sizeof(curr_matrix));
 
     return changed;
+}
