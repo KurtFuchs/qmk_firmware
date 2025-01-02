@@ -19,6 +19,10 @@
 #define MATRIX_COLS 16
 #define MATRIX_ROWS 6
 
+#define USB_POLLING_INTERVAL 1  // Set polling interval to 1ms (1kHz)
+#define NKRO 16  // Enable 16-key rollover
+#define DEBOUNCE 2
+
 /* RGB Matrix Driver Configuration */
 #define SNLED27351_I2C_ADDRESS_1 SNLED27351_I2C_ADDRESS_VDDIO
 #define SNLED27351_I2C_ADDRESS_2 SNLED27351_I2C_ADDRESS_GND
@@ -34,5 +38,3 @@
 /* Set LED driver current */
 #define SNLED27351_CURRENT_TUNE \
     { 0xA6, 0xA6, 0x50, 0xA6, 0xA6, 0x50, 0xA6, 0xA6, 0x50, 0xA6, 0xA6, 0x50 }
-
-#define HOLD_ON_OTHER_KEY_PRESS // Old default behavior of mod-taps

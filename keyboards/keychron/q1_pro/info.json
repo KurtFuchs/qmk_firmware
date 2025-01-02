@@ -1,4 +1,4 @@
-{
+                            {
   "manufacturer": "Keychron",
   "keyboard_name": "Keychron Q1 Pro",
   "url": "https://github.com/Keychron",
@@ -16,7 +16,8 @@
     "mousekey": true,
     "nkro": true,
     "rgb_matrix": true,
-    "dip_switch": true
+    "dip_switch": true,
+    "unicode": true
   },
   "eeprom": {
     "wear_leveling": {
@@ -51,7 +52,7 @@
   },
   "build": {
     "lto": true,
-    "debounce_type": "sym_eager_pk"
+    "debounce_type": "asym_eager_defer_pk"
   },
   "diode_direction": "ROW2COL",
   "rgb_matrix": {
